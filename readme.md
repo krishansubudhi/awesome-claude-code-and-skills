@@ -626,6 +626,11 @@ Skills and tools that stop agent output from looking and reading machine-generat
   - Rust engine with per-language tokenization and Rabin-Karp hashing; opt-in Type-2 and Type-3 passes catch renamed and lightly edited copies
   - AI-ready: MCP server, token-efficient reporter, SARIF/HTML/badge reporters, and a GitHub Action
 
+- [krishansubudhi/ratchet](https://github.com/krishansubudhi/ratchet) ![Stars](https://img.shields.io/github/stars/krishansubudhi/ratchet?style=flat-square)
+  - Code-size budget that only goes down: `ratchet init` records source and test line counts as a ceiling, `ratchet check` refuses changes past it
+  - Claude Code plugin with a Stop hook that blocks a turn that ends over budget; also a git pre-commit hook and a GitHub Action
+  - Only a logged `ratchet grant` raises the ceiling, and the refusal tells the agent to cut code or stop and ask a human; Python, Apache-2.0
+
 ---
 
 ## Multi-Agent Systems
